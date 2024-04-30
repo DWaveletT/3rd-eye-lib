@@ -1,0 +1,10 @@
+{
+  "name": "3rd-eye-lib",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Wavelet",
+  "license": "MIT",
+  "workspaces": [
+    "packages/rehype-3rd-toc"
+  ]
+}
