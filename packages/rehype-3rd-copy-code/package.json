@@ -1,0 +1,46 @@
+{
+  "name": "@dwavelett/rehype-3rd-toc",
+  "version": "0.0.2",
+  "description": "A rehype plugin that product information of the structure while processing headlines",
+  "keywords": [
+    "unified",
+    "rehype",
+    "plugin",
+    "rehype-plugin",
+    "table-of-contents",
+    "toc",
+    "html"
+  ],
+  "author": {
+    "name": "Wavelet"
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/DWaveletT"
+  },
+  "repository": "https://github.com/DWaveletT/3rd-eye-lib",
+  "scripts": {
+    "lint": "eslint lib",
+    "test": "exit 0",
+    "build": "tsc",
+    "release": "pnpm build && pnpm publish --access=public"
+  },
+  "devDependencies": {
+    "@types/hast": "^3.0.4",
+    "@types/unist": "^2.0.10",
+    "eslint": "^7.32.0"
+  },
+  "dependencies": {
+    "hast-util-to-string": "^3.0.0",
+    "hastscript": "^9.0.0",
+    "remark-stringify": "^11.0.0",
+    "typescript": "~5.4.0",
+    "unified": "^11.0.4",
+    "unist-util-visit": "^5.0.0"
+  }
+}
