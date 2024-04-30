@@ -1,6 +1,6 @@
 {
-  "name": "@DWaveletT/rehype-3rd-toc",
-  "version": "0.0.1",
+  "name": "@dwavelett/rehype-3rd-toc",
+  "version": "0.0.2",
   "description": "A rehype plugin that product information of the structure while processing headlines",
   "keywords": [
     "unified",
@@ -18,15 +18,17 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "lib"
+    "dist"
   ],
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/WindrunnerMax"
+    "registry": "https://npm.pkg.github.com/DWaveletT"
   },
   "repository": "https://github.com/DWaveletT/3rd-eye-lib",
   "scripts": {
     "lint": "eslint lib",
-    "build": "tsc"
+    "test": "exit 0",
+    "build": "tsc",
+    "release": "pnpm build && pnpm publish --access=public"
   },
   "devDependencies": {
     "@types/hast": "^3.0.4",
