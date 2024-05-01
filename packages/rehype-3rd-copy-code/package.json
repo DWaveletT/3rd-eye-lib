@@ -7,8 +7,7 @@
     "rehype",
     "plugin",
     "rehype-plugin",
-    "table-of-contents",
-    "toc",
+    "code",
     "html"
   ],
   "author": {
